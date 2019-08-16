@@ -1,0 +1,223 @@
+/* font-family: 'Cutive Mono', monospace;
+font-family: 'Raleway', sans-serif; */
+/* optional other color pallette
+
+beeef7
+6fc2d0
+373a6d
+ff8246 */
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* nav bar */
+nav {
+  display: block;
+  background-color: #373a6d;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 15px solid #ff8246;
+  text-align: center;
+}
+
+.navLink {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+
+.navLink:hover {
+  color: #ff8246;
+  background-color: white;
+}
+
+/* welcome section */
+.welcome {
+  background-color: #beeef7;
+  background-image: url(images/bender_div.png);
+  background-position: 50% 90%;
+  background-size: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+}
+
+.titleWrapper {
+  padding: 15px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: rgba(214, 228, 237, 0.8);
+  display: inline-block;
+  width: 60%;
+  margin-top: 100px;
+  border: 3px solid rgb(130, 139, 144);
+  box-shadow: 5px 5px 5px rgba(130, 139, 144, 0.9);
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote {
+  padding: 20px;
+  background-color: rgba(214, 228, 237, 0.8);
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 60%;
+  margin-top: 100px;
+  border: 3px solid rgb(130, 139, 144);
+  box-shadow: 5px 5px 5px rgba(130, 139, 144, 0.9);
+}
+
+/* about section */
+.about {
+  background-color: #B4E9E2;
+  border-top: 13px solid #373a6d;
+  border-bottom: 13px solid #373a6d;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.aboutWrapper {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
+
+.myStory {
+  line-height: 1.4;
+  text-align: left;
+  display: inline-block;
+  margin: 8% 5% 10% 5%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(192, 249, 242);
+}
+
+/* projects section */
+.projects {
+  background-color: #6fc2d0;
+  text-align: center;
+  padding-bottom: 10%;
+  color: white;
+}
+
+.project-tile {
+  margin: 10% 2% 0 2%;
+  padding: 12px 0;
+  background-color: #81E2F2;
+  background-color: #B4E9E2;
+  display: inline-block;
+  border-radius: 15px;
+  width: 80%;
+}
+
+.project-tile:hover {
+  background-color: white;
+}
+
+.projectTitle {
+  font-sze: 1rem;
+  color: black;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 90%;
+  border-radius: 15px;
+}
+
+/* contact section */
+.contact {
+  background-color: #ff8246;
+  border-top: 15px solid #373a6d;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.contactWrapper {
+  margin: 0 auto;
+}
+
+.contactLink {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: #373a6d;
+  border: 1px solid white;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 15px 5%;
+  box-shadow: 3px 3px 5px #373a6d;
+}
+
+.contactLink:hover {
+  color: #373a6d;
+  background-color: white;
+  border-color: #373a6d;
+}
+
+/* break points */
+/* small/mobile devices */
+@media only screen and (max-width: 385px) {
+  .navLink {
+    font-size: 1rem;
+    padding: 30px 5px;
+  }
+
+  .titleWrapper {
+    margin-top: 75px;
+  }
+
+  .quote {
+    margin-top: 75px;
+  }
+
+  .contactLink {
+    margin: 15px 1%;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .titleWrapper {
+    width: 40%;
+  }
+
+  .quote {
+    width: 40%;
+  }
+
+  .project-tile {
+    width: 45%;
+  }
+}
