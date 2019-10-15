@@ -30,6 +30,11 @@ nav {
   position: sticky;
   top: 0;
   border-bottom: 15px solid #ff8246;
+  transition: top 0.3s;
+}
+
+.hide {
+  top: calc(-15px - 56px - 1.2rem);
 }
 
 .navLink {
@@ -133,7 +138,6 @@ nav {
 
 .projectTitle {
   color: black;
-  /* padding-bottom: 20px; */
   padding-bottom: 1rem;
 }
 
@@ -147,7 +151,7 @@ img {
   background-color: #ff8246;
   border-top: 15px solid #373a6d;
   text-align: center;
-  padding: 2% 0;
+  padding: 2% 0 0 0;
 }
 
 .contactLink {
@@ -168,6 +172,12 @@ img {
   color: #373a6d;
   background-color: white;
   border-color: #373a6d;
+}
+
+.copyright {
+  color: white;
+  font-size: 0.6rem;
+  padding: 0.5rem 0 0.1rem 0;
 }
 
 @media only screen and (min-width: 900px) {
